@@ -16,7 +16,7 @@ def main():
         print(f"Failed to create consumer: {e}")
         sys.exit(1)
 
-    topic = 'test-topic'
+    topic = 'train-positions'
     consumer.subscribe([topic])
     print(f'Consumer subscribed to {topic}')
 

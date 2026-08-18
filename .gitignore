@@ -1,3 +1,4 @@
 streaming_ven
 __pycache__/
 *.pyc
+.env
