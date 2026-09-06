@@ -8,7 +8,7 @@ def main():
         'bootstrap.servers' : 'localhost:9092',
         'client.id': 'python-producer'
     }
-    load_dotenv()
+    load_dotenv('keys/.env')
 
     api_key = os.getenv('WMATA_API_KEY')
 

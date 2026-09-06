@@ -1,4 +1,5 @@
 streaming_ven
 __pycache__/
 *.pyc
-.env
+keys/
+connector-config.json
