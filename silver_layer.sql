@@ -5,13 +5,13 @@ CREATE OR REPLACE STREAM streaming_pipeline.trains.train_stream ON TABLE streami
 SELECT * 
 FROM train_stream;
 
--- test table
+-- test table, dropped
 CREATE OR REPLACE TEMP TABLE train_stream_test AS
 SELECT * 
 FROM train_stream
 ;
 
--- silver table schema
+-- silver table schema, table gets populated during task below
 CREATE TABLE streaming_pipeline.trains.train_data_silver ( 
 train_id string,
  line string,
